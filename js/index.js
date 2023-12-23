@@ -184,7 +184,7 @@ window.addEventListener("load", function () {
   setTimeout(() => {
     // if (vc) vc.init();
     // if (sample1) sample1.init();
-    utm.init();
+    //utm.init();
   }, 1500);
 });
 
@@ -401,7 +401,7 @@ function handleStep4() {
   let next = document.getElementById("step5");
   next.classList.add("active");
   next.classList.remove("disabled");
-
+  utm.destory();
   currentStepProgress = 5;
 
   modal = new Modal({
